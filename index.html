@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StreetSmarts</title>
+        <script src="https://maps.googleapis.com/maps/api/streetview?size=640x640&location=46.5616953,-122.2739002&fov=90&heading=70&pitch=0&key=AIzaSyAFthdy8d5DsWSLyRfW6Jilu8Zl_rziWc4" async></script>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script src="./script.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+        <header id="header-index"></header>
+        <small>StreetSmarts TEST PROGRAM</small>
+        <div id="pano-handler"></div>
+        <div id="new-map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFthdy8d5DsWSLyRfW6Jilu8Zl_rziWc4&callback=initMap&v=weekly&channel=2" async></script>
+        <div id="scoreboard">
+            <div id="coor-text"></div><br>
+            <div id="coor-guess-place"></div><br>
+            <button id="submit-button">SUBMIT</button><br>
+            <div id="distance-from-home"></div>
+            <div id="elevation-type"></div><br>
+            <div id="avg-points"></div>
+        </div>
+        <footer id="footer-index"></footer>
+    </body>
+</html>
